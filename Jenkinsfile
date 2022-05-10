@@ -4,7 +4,7 @@ agent any
     stages {
         stage('Build') { 
             steps {
-		sh 'npm insatll'
+		sh 'npm install'
 	sh 'npm run test'
             }
         }
