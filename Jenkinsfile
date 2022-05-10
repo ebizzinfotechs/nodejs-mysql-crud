@@ -5,7 +5,7 @@ agent any
         stage('Build') { 
             steps {
 
-	sh 'npm run test'
+	sh 'node app.js'
             }
         }
     }
