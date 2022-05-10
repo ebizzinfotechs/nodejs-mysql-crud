@@ -5,9 +5,7 @@ agent any
         stage('Build') { 
             steps {
 
-		sh 'install nodejs'
-
-		sh ' install npm'
+	sh 'npm test'
             }
         }
     }
