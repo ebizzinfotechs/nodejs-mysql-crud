@@ -1,8 +1,13 @@
 pipeline {
-        stage('Test') {
-            steps {
-                sh 'npm install'
-                sh 'npm test'
-            }
-        }
+	agent {
+		node {
+			stage('Test') {
+				steps {
+				sh 'npm install'
+				sh 'npm test'
+				}
+			}
+		}
+	}
+
 }
