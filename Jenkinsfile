@@ -5,11 +5,11 @@ agent any
         stage('Build') { 
             steps {
 				
-				 sh 'apt-get update'
+				 sh 'sudo apt-get update'
 
-				sh 'apt-get install nodejs'
+				sh 'sudo apt-get install nodejs'
 
-				sh 'apt-get install npm'
+				sh 'sudo apt-get install npm'
             }
         }
     }
