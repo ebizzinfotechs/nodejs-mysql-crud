@@ -4,7 +4,7 @@ agent any
 stages {
     stage('install npm') {
         steps {
-        sh 'sudo npm install -g n '
+        sh 'npm install -g n '
             }
      }  
     stage('build') {
